@@ -1,12 +1,18 @@
 # Page settings
 baseurl = "https://kisplab.github.io"
+#baseurl = "http://localhost:1313"
 title = "KİSP-lab"
 languageCode = "tr"
 theme = "hugo-elate-theme"
+#relativeURLs = true
+canonifyURLs = false
+paginate = 5
+
 
 [params]
   
-  custom_css = ["css/custom1.css", "css/custom2.css"]
+  #custom_css = ["css/custom1.css", "css/custom2.css"]
+  custom_css = ["/css/anasayfa.css"]
 
   # Meta
   author = ""
@@ -25,15 +31,16 @@ theme = "hugo-elate-theme"
     services = "Fırsatlar"
     about = "Araştırmacılar"
     contact = "İletişim"
+    articles = "Araştırmalar"
 
     # You can add custom links before or after the default links
     # Assign a weight to define the order
     
     # prepended links
     #[[menu.prepend]]
-    #  url = "http://gohugo.io"
-    #  name = "Hugo"
-    #  weight = 10
+     # url = "#"
+     # name = "Araştırmalar"
+     # weight = 10
 
     # postpended links
     #[[menu.postpend]]
@@ -53,7 +60,7 @@ theme = "hugo-elate-theme"
   [[params.intro.item]]
     title = "Plan"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-    url = "#"
+    url = "/blog/firsatlar"
     button = "Get In Touch"
     icon = "icon-bulb"
     img = "img_7.jpg"
@@ -124,6 +131,28 @@ theme = "hugo-elate-theme"
       title = "Project 6"
       subtitle = "Design"
 
+ # Articles (excerpts) section
+  [params.articles]
+    enable = true
+    title = "Makaleler"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    footertext = '** Demo images from <a href="http://plmd.me/" target="_blank">plmd.me</a>'
+
+    [[params.articles.row]]
+      img = "work_1.jpg"
+      alt = "Image2"
+      title = "Project 1"
+      subtitle = "Branding"
+
+    [[params.articles.row]]
+      img = "work_2.jpg"
+      alt = "Image2"
+      title = "Project 2"
+      subtitle = "Design"
+
+
+
+
   # Testimonials section
   [params.testimonials]
     enable = true
@@ -158,10 +187,12 @@ theme = "hugo-elate-theme"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 
     [[params.services.item]]
-      title = "Brand &amp; Strategy"
+      title = "Araştırma Asistanlığı"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      url = "/blog/firsatlar/"
+      button = "Fırsatlar"
       icon = "icon-anchor"
-
+      
     [[params.services.item]]
       title = "Web &amp; Interface"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"

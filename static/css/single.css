@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* =======================================================
+*
+* 	This custom stylesheet is for single pages 
+*
+* ======================================================= */
+
+.single-content-area{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.navbar{
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+
+/*# sourceMappingURL=style.css.map */

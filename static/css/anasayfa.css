@@ -1,0 +1,321 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* =======================================================
+*
+* 	This custom stylesheet is for the index page (homepage) 
+*
+* ======================================================= */
+
+#fh5co-header .navbar-brand {
+  float: left;
+  display: block;
+  font-size: 40px;
+  font-weight: 300;
+  padding-left: 0;
+  color: #fff;
+}
+#fh5co-home {
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  background-color: #e35925;
+  color: #fff;
+  overflow: hidden;
+}
+#fh5co-home .gradient { /* Do not show gradiaent in home section */
+  display: none;
+}
+a {
+  color: #e35925;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+  color: #e35925;
+  outline: none;
+}
+/* Change color of the fixed navigation bar  */
+#fh5co-header.navbar-fixed-top .navbar-brand {
+  color: #e35925;
+}
+#fh5co-header.navbar-fixed-top #navbar li a {
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#fh5co-header.navbar-fixed-top #navbar li a:hover {
+  color: #e35925;
+}
+#fh5co-header.navbar-fixed-top #navbar li.active a {
+  background: transparent;
+  background: none;
+  color: #e35925;
+}
+#fh5co-header.navbar-fixed-top #navbar li.active a span:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  background-color: #e35925;
+}
+#fh5co-header .navbar-default .brand-slogan em {
+  color: #e35925;
+  font-style: normal;
+}
+
+/*  Color of brand in small screens ****************/
+@media screen and (max-width: 768px) {
+  #fh5co-header {
+    margin-top: 0;
+    background: #fff;
+    -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  }
+  #fh5co-header .navbar-brand {
+    color: #e35925 !important;
+  }
+  #fh5co-header #navbar li a {
+    color: rgba(0, 0, 0, 0.5) !important;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #fh5co-header #navbar li a:hover {
+    color: #e35925 !important;
+  }
+  #fh5co-header #navbar li a span:before {
+    background: transparent !important;
+  }
+  #fh5co-header #navbar li.active a {
+    background: transparent;
+    background: none;
+    color: #e35925 !important;
+  }
+  #fh5co-header #navbar li.active a span:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+/* Change the color of the navbar for small screens  **************/
+.fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
+  background: #e35925;
+}
+.fh5co-nav-toggle i {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  width: 25px;
+  height: 3px;
+  color: #e35925;
+  font: bold 14px/.4 Helvetica;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #e35925;
+  transition: all .2s ease-out;
+}
+.fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
+  content: '';
+  width: 25px;
+  height: 3px;
+  background: #e35925;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+
+
+
+/*  ******************************* */
+
+#fh5co-intro .fh5co-block > .fh5co-text .fh5co-intro-icon { /* Icons in the intro section */
+  font-size: 50px;
+  color: #e35925;
+  margin-bottom: 30px;
+  display: block;
+}
+#fh5co-intro .fh5co-block:hover .btn:hover, #fh5co-intro .fh5co-block:focus .btn:hover { /* Buttons in the intro section */
+  background: #e35925 !important;
+  border: 2px solid #e35925 !important;
+}
+
+/* Styling of buttons *********************** */
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn.btn-primary {
+  background: #e35925;
+  color: #fff;
+  border: none !important;
+  border: 2px solid transparent !important;
+}
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+  box-shadow: none;
+  background: #52d3aa;
+}
+.btn:hover, .btn:active, .btn:focus {
+  background: #393e46 !important;
+  color: #fff;
+  outline: none !important;
+}
+.btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
+  border-color: transparent;
+}
+
+/* Colors of social icons */
+.social li a.social-box {
+  background: #e35925;
+  color: #fff;
+}
+.social li a.social-circle {
+  background: #e35925;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.social li a:hover {
+  background: #393e46 !important;
+}
+.social.social-box a {
+  background: #e35925;
+  color: #fff;
+}
+.social.social-circle a {
+  background: #e35925;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/************************************************************/
+.post-thumbnail {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    background-color: #fbfbfb;
+    margin: auto;
+    position:  relative;
+    text-align: left;
+}
+
+.post-thumbnail-image-box {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    width: 380px;
+}
+.post-thumbnail-image {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: -10px;
+    width: 400px;
+}
+.post-thumbnail-entry {
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 20px;
+    paddig-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+    width: 300px;
+    vertical-align: top;
+}
+.post-thumbnail-summary {
+    display: inline-block;
+    font-size: 15px;
+    text-align: left;
+    padding-top: 15px;
+    font-weight: 200;
+    width: 400px;
+
+    color: #555;
+    font-family: 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+.post_card {
+    display: block;
+    position: relative;
+    background-color: var(--dark);
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 10rem;
+}
+.posts {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: stretch;
+}
+.wrap {
+    padding: 10px 0;
+    max-width: 1024px;
+    margin: 0 auto;
+    list-style: none;
+}
+.excerpt {
+    padding: 0 10px 1.5rem 10px;
+    position: relative;
+    z-index: 1;
+    background: #ffffcc;
+}
+.excerpt_meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-2.5rem);
+    position: relative;
+    z-index: 5;
+}
+.post_copy {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+.copy {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(https://themes.gohugo.io/theme/hugo-swift-theme/images/icons/copy.svg);
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.post_link {
+    padding: 2.5px 0;
+    font-size: 1.25em;
+    margin: 2.5px 0;
+    text-align: left;
+}
+
+/**  Excerpt styling **/
+
+
+/*# sourceMappingURL=style.css.map */
